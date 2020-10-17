@@ -1,0 +1,396 @@
+*{
+	-web-kit-box-sizing: border-box;
+	-mos-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:root{
+    --first-color: #5361FF;
+    --white-color: #FAFAFF;
+    --dark-color: #2A3B47;
+    --text-color: #697477;
+}
+
+:root{
+    --header-height: 3rem;
+    --font-medium: 500;
+}
+
+:root{
+    --body-font: 'Montserrat', sans-serif;
+    --big-font-size: 6.25rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+}
+
+
+@media screen and (min-width: 768px){
+    :root{
+        --big-font-size: 10.5rem;
+        --h2-font-size: 2rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+    }
+}
+
+:root{
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+}
+
+:root{
+    --z-fixed: 100;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 97%;
+    z-index: 1;
+    height: 100px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    transition: .3s;
+
+}
+
+.container {
+
+    min-width: 540px;
+    background-color: #fff;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+
+ 
+}
+
+.container li {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.container li a {
+    float: left;
+    padding: 20px 20px 20px 20px;
+    display: block;
+    color: #2DB190;
+    text-align: center;
+    text-decoration: none;
+   
+}
+
+li a::after {
+    content: "";
+    display: block;
+    margin-top: 5px;
+    width: 0;
+    height: 1px;
+    background: #2DB190;
+    transition: .4s;
+    
+   }
+
+li:hover a::after {
+    width: 100%;
+    transition: .4s;
+
+   }
+
+
+#box1 {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(2,3,28,.7),rgba(45,177,144,.7)),url(images/05.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: table;
+    background-attachment: fixed; 
+}
+
+
+.mylogo img {
+    height: 275px;
+    width: 275px;
+    border-radius: 100%;
+    text-align: center;
+    margin: 150px auto 0;
+    display: block;
+
+}
+
+
+.name {
+    color: #fff;
+    text-align: center;
+    border-radius: 10%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    
+}
+
+.job {
+    color: #fff;
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 200;
+    
+}
+
+
+#box2 {
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    background-size: cover;
+    background-position: bottom;
+    display: table;
+    background-attachment: fixed;
+    
+
+
+}
+
+.container2 {
+    height: 570px;
+    width: 1140px;
+    margin: 100px auto 0;
+    box-sizing: border-box;
+    display: flex;
+
+}
+
+.b1 {
+    height: 570px;
+    width: 570px;
+    min-width: 570px;
+
+
+}
+
+.b1 .info {
+    max-width: 530px;
+}
+
+.b1 .t {
+    font-weight: 700;
+    color: #29a586;
+    font-size: 30px;
+    text-align: left;
+} 
+
+.b1 .info {
+    font-weight: 500;
+    color: #35363A;
+    font-size: 19px;
+    text-align: left;
+}
+
+.b1 ul {
+    margin-top: 40px;
+    margin-bottom: 11px;
+    list-style: none;
+    font-weight: 100;
+    font-size: 18px;
+    color: #35363A;
+    display: inline;
+    text-align: left; 
+}
+
+.bold {
+    color: #2DB190;
+
+}
+
+.b1 address a img {
+    height: 37px;
+    width: 37px;
+    margin: 33px 7px;
+    border-radius: 30%;
+    border:1.2px solid #35363A;
+    transition: .45s;
+    background-color: #fff; 
+}
+
+.b1 address a img:hover {
+    background-color: #2DB190;
+    border:1.2px solid #2DB190;
+    
+    
+}
+
+#box2 .b2 {
+    height: 570px;
+    width: 570px;
+
+    }
+
+.b2 div {
+    padding-bottom: 20px;
+}
+
+.b2 div h3 {
+    color: #35363A;
+    margin: auto;
+}
+
+.b2 div .firstHeadLine {
+    margin-top: 74px;
+}
+
+.b2 div {
+    margin-bottom: 30px;
+}
+
+#box3 {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(2,3,28,.7),rgba(204,16,53,.7)),url(images/06.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: table;
+    background-attachment: fixed;
+
+}
+
+#box3 .container {
+    height: 450px;
+    width: 1000px;
+    margin: 130px auto 0;
+    
+}
+
+#box3 .container .s {
+    display: flex;
+    margin: 0 auto 0;
+}
+
+#box3 .container .s1 {
+    height: 300px;
+    width: 390px;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    
+}
+
+#box3 .container .s .line {
+    content: '';
+    height: 100px;
+    width: 1px;
+    background: #35363A;
+    margin: 75px auto;
+    display: block;
+
+}
+
+#box3 .container .s1 img {
+    height: 70px;
+    width: 70px;
+ 
+}
+
+#box3 .container .t {
+    color: #a82a9d;
+    font-weight: 700;
+    font-size: 35px;
+
+}
+
+.container .s1 .h {
+    color: #b02ca7;
+    font-weight: 200;
+    font-size: 20px;
+    margin-top: auto;
+    
+}
+
+.container .s1 .h::after {
+    content: '';
+    height: 1.1px;
+    width: 40px;
+    background: #b02ca7;
+    margin: 20px auto;
+    display: block;
+}
+
+.container .s2 .p {
+    color: #35363A; 
+    font-weight: 200;
+    
+}
+
+.container .s1 .p {
+    color: #35363A; 
+    font-weight: 200;
+    
+}
+#box3 .container .s2 {
+    height: 300px;
+    width: 390px;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+   
+}
+
+#box3 .container .s2 img {
+    height: 70px;
+    width: 70px;
+ 
+}
+
+.container .s2 .h {
+    color: #b02ca7;
+    font-weight: 200;
+    font-size: 20px;
+    margin-top: auto;
+    
+}
+
+.container .s2 .h::after {
+    content: '';
+    height: 1.1px;
+    width: 40px;
+    background: #b02ca7;
+    margin: 20px auto;
+    display: block;
+}
+footer {
+    height: 202px;
+    width: 100%;
+    background-size: cover;
+    background-color: #fff;
+    display: table;
+    background-position: bottom;
+    display: table;
+    background-attachment: fixed;
+
+
+}
+
+footer div {
+    height: 202px;
+    width: 100%;
+    margin: 30px auto 0;
+    text-align: center;
+
+}
+
+
+
+
