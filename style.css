@@ -89,7 +89,7 @@ header {
     color: #2DB190;
     text-align: center;
     text-decoration: none;
-   
+    background-color: white;
 }
 
 li a::after {
